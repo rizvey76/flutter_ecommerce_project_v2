@@ -5,6 +5,8 @@ import 'package:flutter_application_ecom/controllers/popular_product_controller.
 import 'package:flutter_application_ecom/pages/splash/splash_screen.dart';
 import 'package:flutter_application_ecom/presentation/shared/main_shell.dart';
 import 'package:flutter_application_ecom/test_page/admin_page.dart';
+import 'package:flutter_application_ecom/test_widgets/draggable_sheet.dart';
+import 'package:flutter_application_ecom/test_widgets/shader_mask.dart';
 import 'package:flutter_application_ecom/test_widgets/test1.dart';
 import 'package:flutter_application_ecom/test_widgets/test10.dart';
 import 'package:flutter_application_ecom/test_widgets/test11.dart';
@@ -16,6 +18,7 @@ import 'package:flutter_application_ecom/test_widgets/test6.dart';
 import 'package:flutter_application_ecom/test_widgets/test7.dart';
 import 'package:flutter_application_ecom/test_widgets/test8.dart';
 import 'package:flutter_application_ecom/test_widgets/test9.dart';
+import 'package:flutter_application_ecom/test_widgets/tween_Animation.dart';
 import 'package:get/get.dart';
 // import 'helper/dependencies.dart' as dep;
 import 'helper/dependenciesRev.dart' as devDep;
@@ -49,7 +52,7 @@ class MyApp extends StatelessWidget {
         switch (settings.name) {
           case '/':
             // return MaterialPageRoute(builder: (context) => SplashScreen());
-            return MaterialPageRoute(builder: (context) => MainShell());
+            return MaterialPageRoute(builder: (context) => Shaderr());
 
         // case '/application':q
 
