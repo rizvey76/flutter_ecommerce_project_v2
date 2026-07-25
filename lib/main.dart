@@ -5,6 +5,7 @@ import 'package:flutter_application_ecom/controllers/popular_product_controller.
 import 'package:flutter_application_ecom/pages/splash/splash_screen.dart';
 import 'package:flutter_application_ecom/presentation/shared/main_shell.dart';
 import 'package:flutter_application_ecom/test_page/admin_page.dart';
+import 'package:flutter_application_ecom/test_widgets/animeted_widget.dart';
 import 'package:flutter_application_ecom/test_widgets/draggable_sheet.dart';
 import 'package:flutter_application_ecom/test_widgets/shader_mask.dart';
 import 'package:flutter_application_ecom/test_widgets/test1.dart';
@@ -52,7 +53,7 @@ class MyApp extends StatelessWidget {
         switch (settings.name) {
           case '/':
             // return MaterialPageRoute(builder: (context) => SplashScreen());
-            return MaterialPageRoute(builder: (context) => Shaderr());
+            return MaterialPageRoute(builder: (context) => AnimetedWidgett());
 
         // case '/application':q
 
