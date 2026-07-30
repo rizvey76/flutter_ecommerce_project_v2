@@ -7,6 +7,7 @@ import 'package:flutter_application_ecom/presentation/shared/main_shell.dart';
 import 'package:flutter_application_ecom/test_page/admin_page.dart';
 import 'package:flutter_application_ecom/test_widgets/animeted_widget.dart';
 import 'package:flutter_application_ecom/test_widgets/draggable_sheet.dart';
+import 'package:flutter_application_ecom/test_widgets/expansion_panel.dart';
 import 'package:flutter_application_ecom/test_widgets/explicit_animation.dart';
 import 'package:flutter_application_ecom/test_widgets/implicit_animation.dart';
 import 'package:flutter_application_ecom/test_widgets/shader_mask.dart';
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
     // Get.find<ComparedProductController>().getComparedProductList();
     return  GetMaterialApp(
       title: 'Flutter Ecommerce',
+      //temporay change to test the expansion panel widget
       scrollBehavior: NoScrollbarBehavior(),
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -55,7 +57,7 @@ class MyApp extends StatelessWidget {
         switch (settings.name) {
           case '/':
             // return MaterialPageRoute(builder: (context) => SplashScreen());
-            return MaterialPageRoute(builder: (context) => ExplicitAnimation());
+            return MaterialPageRoute(builder: (context) => ExpansionPanelEx());
 
         // case '/application':q
 
