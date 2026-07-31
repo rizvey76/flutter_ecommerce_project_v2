@@ -10,6 +10,9 @@ import 'package:flutter_application_ecom/test_widgets/draggable_sheet.dart';
 import 'package:flutter_application_ecom/test_widgets/expansion_panel.dart';
 import 'package:flutter_application_ecom/test_widgets/explicit_animation.dart';
 import 'package:flutter_application_ecom/test_widgets/implicit_animation.dart';
+import 'package:flutter_application_ecom/test_widgets/scaffoldMessengerGlobal/home_page.dart';
+import 'package:flutter_application_ecom/test_widgets/scaffoldMessengerGlobal/snackbar_Service.dart';
+import 'package:flutter_application_ecom/test_widgets/scaffold_messenger_async.dart';
 import 'package:flutter_application_ecom/test_widgets/shader_mask.dart';
 import 'package:flutter_application_ecom/test_widgets/test1.dart';
 import 'package:flutter_application_ecom/test_widgets/test10.dart';
@@ -49,15 +52,21 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
+       scaffoldMessengerKey: SnackbarService.messengerKey,
       // home: SplashScreen(),
       initialRoute: '/',
       onGenerateRoute: (settings) {
         // final size = MediaQuery.of(context).size;
 
+
+        // test
+      
+
         switch (settings.name) {
           case '/':
             // return MaterialPageRoute(builder: (context) => SplashScreen());
-            return MaterialPageRoute(builder: (context) => ExpansionPanelEx());
+            return MaterialPageRoute(builder: (context) => HomePageScaffoldMessenger());
+            //  return MaterialPageRoute(builder: (context) => ScaffoldMessengerAsync());
 
         // case '/application':q
 
