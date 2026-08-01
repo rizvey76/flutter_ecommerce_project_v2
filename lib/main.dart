@@ -14,6 +14,8 @@ import 'package:flutter_application_ecom/test_widgets/scaffoldMessengerGlobal/ho
 import 'package:flutter_application_ecom/test_widgets/scaffoldMessengerGlobal/snackbar_Service.dart';
 import 'package:flutter_application_ecom/test_widgets/scaffold_messenger_async.dart';
 import 'package:flutter_application_ecom/test_widgets/shader_mask.dart';
+import 'package:flutter_application_ecom/test_widgets/statefulBuilderFull/initial_bindings.dart';
+import 'package:flutter_application_ecom/test_widgets/statefulBuilderFull/statefulBuilder_checkout_page.dart';
 import 'package:flutter_application_ecom/test_widgets/test1.dart';
 import 'package:flutter_application_ecom/test_widgets/test10.dart';
 import 'package:flutter_application_ecom/test_widgets/test11.dart';
@@ -31,7 +33,7 @@ import 'package:get/get.dart';
 import 'helper/dependenciesRev.dart' as devDep;
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await devDep.initRev();
+  // await devDep.initRev();
   runApp(const MyApp());
 }
 
@@ -55,6 +57,7 @@ class MyApp extends StatelessWidget {
        scaffoldMessengerKey: SnackbarService.messengerKey,
       // home: SplashScreen(),
       initialRoute: '/',
+      initialBinding: InitialBindings(),
       onGenerateRoute: (settings) {
         // final size = MediaQuery.of(context).size;
 
@@ -65,7 +68,7 @@ class MyApp extends StatelessWidget {
         switch (settings.name) {
           case '/':
             // return MaterialPageRoute(builder: (context) => SplashScreen());
-            return MaterialPageRoute(builder: (context) => HomePageScaffoldMessenger());
+            return MaterialPageRoute(builder: (context) => CheckoutPage());
             //  return MaterialPageRoute(builder: (context) => ScaffoldMessengerAsync());
 
         // case '/application':q
