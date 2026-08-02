@@ -6,6 +6,8 @@ import 'package:flutter_application_ecom/pages/splash/splash_screen.dart';
 import 'package:flutter_application_ecom/presentation/shared/main_shell.dart';
 import 'package:flutter_application_ecom/test_page/admin_page.dart';
 import 'package:flutter_application_ecom/test_widgets/animeted_widget.dart';
+import 'package:flutter_application_ecom/test_widgets/autoComplete_search/a_productSearch_page.dart';
+import 'package:flutter_application_ecom/test_widgets/autoComplete_search/a_product_binding.dart';
 import 'package:flutter_application_ecom/test_widgets/draggable_sheet.dart';
 import 'package:flutter_application_ecom/test_widgets/expansion_panel.dart';
 import 'package:flutter_application_ecom/test_widgets/explicit_animation.dart';
@@ -57,7 +59,7 @@ class MyApp extends StatelessWidget {
        scaffoldMessengerKey: SnackbarService.messengerKey,
       // home: SplashScreen(),
       initialRoute: '/',
-      initialBinding: InitialBindings(),
+      initialBinding: AProductBinding(),
       onGenerateRoute: (settings) {
         // final size = MediaQuery.of(context).size;
 
@@ -68,7 +70,7 @@ class MyApp extends StatelessWidget {
         switch (settings.name) {
           case '/':
             // return MaterialPageRoute(builder: (context) => SplashScreen());
-            return MaterialPageRoute(builder: (context) => CheckoutPage());
+            return MaterialPageRoute(builder: (context) => ProductSearchPage());
             //  return MaterialPageRoute(builder: (context) => ScaffoldMessengerAsync());
 
         // case '/application':q
