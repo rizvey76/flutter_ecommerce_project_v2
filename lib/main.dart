@@ -11,6 +11,7 @@ import 'package:flutter_application_ecom/test_widgets/autoComplete_search/a_prod
 import 'package:flutter_application_ecom/test_widgets/draggable_sheet.dart';
 import 'package:flutter_application_ecom/test_widgets/expansion_panel.dart';
 import 'package:flutter_application_ecom/test_widgets/explicit_animation.dart';
+import 'package:flutter_application_ecom/test_widgets/focus_shortcuts_actions_intent/editor_page.dart';
 import 'package:flutter_application_ecom/test_widgets/implicit_animation.dart';
 import 'package:flutter_application_ecom/test_widgets/scaffoldMessengerGlobal/home_page.dart';
 import 'package:flutter_application_ecom/test_widgets/scaffoldMessengerGlobal/snackbar_Service.dart';
@@ -70,7 +71,7 @@ class MyApp extends StatelessWidget {
         switch (settings.name) {
           case '/':
             // return MaterialPageRoute(builder: (context) => SplashScreen());
-            return MaterialPageRoute(builder: (context) => ProductSearchPage());
+            return MaterialPageRoute(builder: (context) => EditorPage());
             //  return MaterialPageRoute(builder: (context) => ScaffoldMessengerAsync());
 
         // case '/application':q
