@@ -18,6 +18,8 @@ import 'package:flutter_application_ecom/test_widgets/overlyPopup/product_card.d
 import 'package:flutter_application_ecom/test_widgets/scaffoldMessengerGlobal/home_page.dart';
 import 'package:flutter_application_ecom/test_widgets/scaffoldMessengerGlobal/snackbar_Service.dart';
 import 'package:flutter_application_ecom/test_widgets/scaffold_messenger_async.dart';
+import 'package:flutter_application_ecom/test_widgets/segmentedButton/segmented_dependency.dart';
+import 'package:flutter_application_ecom/test_widgets/segmentedButton/segmented_view.dart';
 import 'package:flutter_application_ecom/test_widgets/shader_mask.dart';
 import 'package:flutter_application_ecom/test_widgets/statefulBuilderFull/initial_bindings.dart';
 import 'package:flutter_application_ecom/test_widgets/statefulBuilderFull/statefulBuilder_checkout_page.dart';
@@ -62,7 +64,7 @@ class MyApp extends StatelessWidget {
        scaffoldMessengerKey: SnackbarService.messengerKey,
       // home: SplashScreen(),
       initialRoute: '/',
-      initialBinding: AProductBinding(),
+      initialBinding: SegmentedDependency(),
       onGenerateRoute: (settings) {
         // final size = MediaQuery.of(context).size;
 
@@ -73,7 +75,7 @@ class MyApp extends StatelessWidget {
         switch (settings.name) {
           case '/':
             // return MaterialPageRoute(builder: (context) => SplashScreen());
-            return MaterialPageRoute(builder: (context) => HomePageOverly());
+            return MaterialPageRoute(builder: (context) => SegmentedViewPage());
             //  return MaterialPageRoute(builder: (context) => ScaffoldMessengerAsync());
 
         // case '/application':q
