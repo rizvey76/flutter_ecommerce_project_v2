@@ -13,6 +13,8 @@ import 'package:flutter_application_ecom/test_widgets/expansion_panel.dart';
 import 'package:flutter_application_ecom/test_widgets/explicit_animation.dart';
 import 'package:flutter_application_ecom/test_widgets/focus_shortcuts_actions_intent/editor_page.dart';
 import 'package:flutter_application_ecom/test_widgets/implicit_animation.dart';
+import 'package:flutter_application_ecom/test_widgets/overlyPopup/home_page_overly.dart';
+import 'package:flutter_application_ecom/test_widgets/overlyPopup/product_card.dart';
 import 'package:flutter_application_ecom/test_widgets/scaffoldMessengerGlobal/home_page.dart';
 import 'package:flutter_application_ecom/test_widgets/scaffoldMessengerGlobal/snackbar_Service.dart';
 import 'package:flutter_application_ecom/test_widgets/scaffold_messenger_async.dart';
@@ -71,7 +73,7 @@ class MyApp extends StatelessWidget {
         switch (settings.name) {
           case '/':
             // return MaterialPageRoute(builder: (context) => SplashScreen());
-            return MaterialPageRoute(builder: (context) => EditorPage());
+            return MaterialPageRoute(builder: (context) => HomePageOverly());
             //  return MaterialPageRoute(builder: (context) => ScaffoldMessengerAsync());
 
         // case '/application':q
