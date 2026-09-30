@@ -23,17 +23,17 @@ import 'package:flutter_application_ecom/test_widgets/segmentedButton/segmented_
 import 'package:flutter_application_ecom/test_widgets/shader_mask.dart';
 import 'package:flutter_application_ecom/test_widgets/statefulBuilderFull/initial_bindings.dart';
 import 'package:flutter_application_ecom/test_widgets/statefulBuilderFull/statefulBuilder_checkout_page.dart';
-import 'package:flutter_application_ecom/test_widgets/test1.dart';
-import 'package:flutter_application_ecom/test_widgets/test10.dart';
-import 'package:flutter_application_ecom/test_widgets/test11.dart';
-import 'package:flutter_application_ecom/test_widgets/test2.dart';
-import 'package:flutter_application_ecom/test_widgets/test3.dart';
-import 'package:flutter_application_ecom/test_widgets/test4.dart';
-import 'package:flutter_application_ecom/test_widgets/test5.dart';
-import 'package:flutter_application_ecom/test_widgets/test6.dart';
-import 'package:flutter_application_ecom/test_widgets/test7.dart';
-import 'package:flutter_application_ecom/test_widgets/test8.dart';
-import 'package:flutter_application_ecom/test_widgets/test9.dart';
+import 'package:flutter_application_ecom/test_widgets/slivers.dart';
+import 'package:flutter_application_ecom/test_widgets/login_page_animated_switcher.dart';
+import 'package:flutter_application_ecom/test_widgets/animated_positioned.dart';
+import 'package:flutter_application_ecom/test_widgets/stream_listView.dart';
+import 'package:flutter_application_ecom/test_widgets/custom_navigation.dart';
+import 'package:flutter_application_ecom/test_widgets/credit_card_animated_container.dart';
+import 'package:flutter_application_ecom/test_widgets/clip_r_rect_blur_card.dart';
+import 'package:flutter_application_ecom/test_widgets/swing_animated_builder.dart';
+import 'package:flutter_application_ecom/test_widgets/flicking_animation.dart';
+import 'package:flutter_application_ecom/test_widgets/value_notifier.dart';
+import 'package:flutter_application_ecom/test_widgets/list_with_animated_list_state.dart';
 import 'package:flutter_application_ecom/test_widgets/tween_Animation.dart';
 import 'package:get/get.dart';
 // import 'helper/dependencies.dart' as dep;
@@ -74,8 +74,8 @@ class MyApp extends StatelessWidget {
 
         switch (settings.name) {
           case '/':
-            // return MaterialPageRoute(builder: (context) => SplashScreen());
-            return MaterialPageRoute(builder: (context) => SegmentedViewPage());
+            return MaterialPageRoute(builder: (context) => AnimatedPositionedExample());
+            // return MaterialPageRoute(builder: (context) => SegmentedViewPage());
             //  return MaterialPageRoute(builder: (context) => ScaffoldMessengerAsync());
 
         // case '/application':q

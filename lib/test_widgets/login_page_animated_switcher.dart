@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_ecom/test_widgets/login_page.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class LoginPageAnimatedSwitcher extends StatefulWidget {
+  const LoginPageAnimatedSwitcher({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<LoginPageAnimatedSwitcher> createState() => _LoginScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _LoginScreenState extends State<LoginPageAnimatedSwitcher> {
 
   bool isLoading = false;
   Future<void> login() async{

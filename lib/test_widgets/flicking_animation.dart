@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
-class Test6 extends StatefulWidget {
-  const Test6({super.key});
+class FlickingAnimation extends StatefulWidget {
+
+  const FlickingAnimation({super.key});
 
   @override
-  State<Test6> createState() => _Test6State();
+  State<FlickingAnimation> createState() => _Test7State();
 }
 
-class _Test6State extends State<Test6> with SingleTickerProviderStateMixin{
+class _Test7State extends State<FlickingAnimation> with SingleTickerProviderStateMixin{
 
   late final AnimationController _controller;
+   late final Animation<double> _animation;
 
   @override
   void initState(){
@@ -18,8 +20,17 @@ class _Test6State extends State<Test6> with SingleTickerProviderStateMixin{
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(
-        seconds: 3
-      ))..repeat();
+        seconds: 2
+      ));
+
+      _animation = Tween<double>(
+        begin: 0.5,
+        end: 1.5 ).animate(
+          CurvedAnimation(parent: _controller, curve: Curves.easeInOut),
+        
+      );
+
+      _controller.repeat(reverse: true);
   }
 
   @override
@@ -35,7 +46,7 @@ class _Test6State extends State<Test6> with SingleTickerProviderStateMixin{
         child: AnimatedBuilder(animation: _controller,
         child: const FlutterLogo(size: 120),
          builder: (context, child){
-          return Transform.rotate(angle: _controller.value * 2 * 3.141592653589793,
+          return Transform.scale(scale: _animation.value,
           child: child,);
          }),
       ),

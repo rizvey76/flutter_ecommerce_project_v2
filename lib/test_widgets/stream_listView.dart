@@ -15,14 +15,14 @@ class Product{
   });
 }
 
-class Test2 extends StatefulWidget {
-  const Test2({super.key});
+class StreamListview extends StatefulWidget {
+  const StreamListview({super.key});
 
   @override
-  State<Test2> createState() => _Test2State();
+  State<StreamListview> createState() => _Test2State();
 }
 
-class _Test2State extends State<Test2> {
+class _Test2State extends State<StreamListview> {
 
 final StreamController<List<Product>> _controller = StreamController<List<Product>>();
   // late Stream<List<Product>> _productStream;

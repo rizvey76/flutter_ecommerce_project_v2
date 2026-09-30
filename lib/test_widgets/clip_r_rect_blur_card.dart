@@ -2,8 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-class Test5 extends StatelessWidget {
-  const Test5({super.key});
+class ClipRRectExample extends StatelessWidget {
+  const ClipRRectExample({super.key});
 
   @override
   Widget build(BuildContext context) {
